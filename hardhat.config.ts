@@ -14,28 +14,28 @@ const config: HardhatUserConfig = {
     ]
   },
   networks: {
-    "morph": {
-       url: "https://rpc-testnet.morphl2.io",
+    "zerogravity": {
+       url: "https://rpc-testnet.0g.ai",
        accounts: [process.env.PRIVATE_KEY as string],
-       gasPrice: 1500000000,
+       gasPrice: 1000000000,
     },
   },
   etherscan: {
     apiKey: {
-      morph: "abc"
+      zerogravity: "abc"
     },
     customChains: [
       {
-        network: "morph",
-        chainId: 2710,
+        network: "zerogravity",
+        chainId: 16600,
         urls: {
-          apiURL: "https://explorer-api-testnet.morphl2.io/api",
-          browserURL: "https://explorer-testnet.morphl2.io",
+          apiURL: "",
+          browserURL: "https://chainscan-newton.0g.ai",
         }
       }
     ]
   },
-  defaultNetwork: 'morph',
+  defaultNetwork: 'zerogravity',
 };
 
 export default config;
