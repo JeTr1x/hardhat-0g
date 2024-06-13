@@ -17,7 +17,7 @@ const config: HardhatUserConfig = {
     "zerogravity": {
        url: "https://rpc-testnet.0g.ai",
        accounts: [process.env.PRIVATE_KEY as string],
-       gasPrice: 1000000000,
+       gasPrice: 1000,
     },
   },
   etherscan: {
@@ -29,7 +29,7 @@ const config: HardhatUserConfig = {
         network: "zerogravity",
         chainId: 16600,
         urls: {
-          apiURL: "",
+          apiURL: "https://chainscan-newton.0g.ai/api",
           browserURL: "https://chainscan-newton.0g.ai",
         }
       }
