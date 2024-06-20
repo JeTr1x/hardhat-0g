@@ -3,9 +3,10 @@ pragma solidity ^0.8.0;
 
 contract Counter {
     int256 private count;
+    int256 public initialCount = 0;
 
-    constructor(int256 _initialCount) {
-        count = _initialCount;
+    constructor() {
+        count = initialCount;
     }
 
     function increment() public {
