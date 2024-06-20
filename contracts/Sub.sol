@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract NativeTokenSubscriptionService {
+contract SubscriptionService {
     uint256 public subscriptionFee;
     uint256 public subscriptionDuration;
 
