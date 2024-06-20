@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 contract NFT is ERC721 {
     uint256 counter;
 
-    constructor() ERC721("Coke", "COLA") {}
+    constructor() ERC721("SimpleNFT", "SNFT") {}
 
     function mint(address recipient)
         public
